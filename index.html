@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Simple Weather App</h3>
+        <div class="input-wrapper">
+            <form>
+                <input type="search" name="input" id="city-input" placeholder="Enter City" required>
+                <button type="submit"> <span>Submit</span></button>
+            </form>
+        </div>
+        <div class="output-wrapper">
+            <div class="weatherIcon">
+                <img src="" alt="weather Icon">
+            </div>
+            <div class="temp">
+                <span id="temp">- °C</span>
+                <p class="desc"> Status </p>
+            </div>
+            <div class="details-container">
+                <div class="details">
+                    <span id="temp_min">Min : - °C</span>
+                    <span id="temp_max">Max : - °C</span>
+                </div>
+                <div class="details">
+                    <span id="humidity">Humidity : - %</span>
+                    <span id="wind">Wind : - km/hr</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
