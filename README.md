@@ -15,6 +15,7 @@ You can view a live demo of this project :- [https://weatherapp-t.netlify.app/](
 
 ## Screenshots
 
-[Screenshot 1](/assets/screenshot/Screenshot 1.png)
-[Screenshot 2](/assets/screenshot/Screenshot 1.png)
+![Screenshot 1](assets/screenshot/Screenshot%201.png)
+![Screenshot 1](assets/screenshot/Screenshot%202.png)
+![Screenshot 1](assets/screenshot/Screenshot%203.png)
 
