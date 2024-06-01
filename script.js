@@ -19,7 +19,7 @@ const getweather = async (city) => {
 const showWeather = (data) => {
     if (data.cod == "404") {
         weather.innerHTML = `<h1>City Not Found</h1>
-        <img src='./images/error-404.png' style="scale:0.6; width :46%;margin-left:110px">`
+        <img src='./assets/images/error-404.png' style="scale:0.6; width :46%;margin-left:110px">`
         document.body.style.background = "linear-gradient(to right, #8e2de2, #4a00e0)";
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
@@ -48,21 +48,21 @@ const showWeather = (data) => {
 
 
     if (data.weather[0].main == 'Clear') {
-        document.body.style.backgroundImage = `url("./images/clear\ sky.jpg")`
+        document.body.style.backgroundImage = `url("./assets/images/clear\ sky.jpg")`
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
         document.body.style.backgroundSize = 'cover'
         return;
     }
     if (data.weather[0].description == 'few clouds') {
-        document.body.style.backgroundImage = `url("./images/few\ clouds.jpg")`
+        document.body.style.backgroundImage = `url("./assets/images/few\ clouds.jpg")`
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
         document.body.style.backgroundSize = 'cover'
         return;
     }
     if (data.weather[0].description == 'scattered clouds') {
-        document.body.style.backgroundImage = `url("./images/scattered\ clouds.jpg")`
+        document.body.style.backgroundImage = `url("./assets/images/scattered\ clouds.jpg")`
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
         document.body.style.backgroundSize = 'cover'
@@ -70,42 +70,42 @@ const showWeather = (data) => {
     }
 
     if ((data.weather[0].description == 'broken clouds') || (data.weather[0].description == 'overcast clouds')) {
-        document.body.style.backgroundImage = `url("./images/broken\ clouds.jpg")`
+        document.body.style.backgroundImage = `url("./assets/images/broken\ clouds.jpg")`
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
         document.body.style.backgroundSize = 'cover'
         return;
     }
     if (data.weather[0].main == 'Drizzle') {
-        document.body.style.backgroundImage = `url("./images/shower\ rain.jpg")`
+        document.body.style.backgroundImage = `url("./assets/images/shower\ rain.jpg")`
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
         document.body.style.backgroundSize = 'cover'
         return;
     }
     if (data.weather[0].main == 'Rain') {
-        document.body.style.backgroundImage = `url("./images/rain.jpg")`
+        document.body.style.backgroundImage = `url("./assets/images/rain.jpg")`
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
         document.body.style.backgroundSize = 'cover'
         return;
     }
     if (data.weather[0].main == 'Thunderstorm') {
-        document.body.style.backgroundImage = `url("./images/Thunderstorm.jpg")`
+        document.body.style.backgroundImage = `url("./assets/images/Thunderstorm.jpg")`
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
         document.body.style.backgroundSize = 'cover'
         return;
     }
     if (data.weather[0].main == 'Snow') {
-        document.body.style.backgroundImage = `url("./images/snow.avif")`
+        document.body.style.backgroundImage = `url("./assets/images/snow.avif")`
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
         document.body.style.backgroundSize = 'cover'
         return;
     }
     if (data.weather[0].main == 'Haze' || 'Smoke' || 'Mist' || 'Fog' || 'Dust' || 'Sand' || 'Ash' || 'Squall' || 'Tornado') {
-        document.body.style.backgroundImage = `url("./images/mist.jpg")`
+        document.body.style.backgroundImage = `url("./assets/images/mist.jpg")`
         document.body.style.backgroundRepeat = 'no-repeat'
         document.body.style.backgroundPosition = 'center'
         document.body.style.backgroundSize = 'cover'
